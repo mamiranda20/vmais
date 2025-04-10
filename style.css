@@ -1,0 +1,100 @@
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #006AFF;
+  }
+  
+li {
+    float: right;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+  }
+
+form.pesquisa input[type=text] {
+    float: center;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 55px;
+    border: 1px solid #213bad;
+    padding: 20px;
+    width: 800px;
+}
+
+form.pesquisa button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+
+  }
+
+  .centered {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .pesquisa {
+
+  }
+
+
+#border_form{
+    width: 80vh;
+    height: 70vh;
+    border-radius: 30px;
+    border-color: blueviolet;
+}
+#main{
+    width: 100vh;
+    height: 90vh;
+    align-content: center;
+    justify-items:center; 
+    align-self: center;
+}
+#form{
+    width: 80vh;
+    height: 68vh;
+    align-content: center;
+    justify-content: center;
+    position:absolute;
+    padding-left:28vh;
+}

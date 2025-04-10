@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> <!--Título da aba no Google-->
+    <link rel="stylesheet" href="style.css"> <!--Link externo do CSS-->
+</head>
+<body>
+    <h1>Login V+</h1><!--Título-->
+        <form name="frm_login" id="main"> <!--Criando um form e atribuindo um código único(Id)-->
+                <fieldset id="border_form"><!--"Linha que contorna o formulário"-->
+                    <legend>Login</legend><!--Legenda do fieldset-->
+                    <div id="form"> <!--Unificando componentes do formulário-->
+                    <label class="label">Usuário ou email</label><br><!--Legenda que fica por cima do input-->
+                    <input type="text" placeholder="Digite seu usuário ou email" name="input_user"><!--Caixa de texto,placeholder para "texto" dentro do campo de texto -->
+                    <br>
+                    <br>
+                    <label class="label">Senha</label><br>
+                    <input type="password" placeholder="Digite sua senha" name="input_password">
+                    <br>
+                    <br>
+                    <input type="button" name="button_enviar" value="Enviar" onClick='Enviar()' >
+                    <br>
+                    <a href="cadastro.html">Meu primeiro acesso</a>
+                    </div>
+                    </fieldset>
+                    </div>
+                    <script src="script.js" defer></script>
+</body>
+</html>
