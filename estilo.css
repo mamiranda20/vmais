@@ -1,11 +1,6 @@
 
 
-/*comentário */
-
-p {
-   margin-top: 3cm;
-  }
-
+/* === ESTILOS GERAIS === */
 body {
      background-color: gray;
      color: white;
@@ -14,26 +9,31 @@ body {
      font-weight: bold;
 }
 
-h3 {font-family: Arial;
-   font-style: italic;
-   color: white;
-   font-weight: bold;
-   font-size: 20px;}
 
-   h1 {
+h1 {
       background-color: black;
-      font-family: arial;
       font-style: italic;
-      color: white;
       text-align: center;
-      font-weight: bold;
       font-size: 40px;
-      }
+}
 
+
+h3 {
+         font-style: italic;
+         font-size: 20px;
+}
+
+
+/* === ELEMENTOS DE TEXTO === */
+p {
+   margin-top: 3cm;
+}
+
+
+/* === ÁREAS FIXAS === */
 .superior_esquerda {
-      
       background-color: green;
-      border: solid 5px;
+      border: 5px solid white;
       border-color: white;
       height: 300px;
       width: 600px;
@@ -41,10 +41,11 @@ h3 {font-family: Arial;
       top: 0px;
       left: 0px;
 }
+
+
 .superior_direita {
    background-color: blue;
-   border: solid 5px;
-   border-color: white;
+   border: 5px solid white;
    height: 300px;
    width: 300px;
    position: fixed;
@@ -54,8 +55,25 @@ h3 {font-family: Arial;
 
 
 .esquerda_inferior {
-
+   /*ainda sem estilo definido*/
 }
+
+/* === ÁREA CENTRAL === */
+.centro {
+   border: 5px solid white;
+   position: fixed;
+   height: 600px;
+   width: 600px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   box-shadow: 0 0 50px white
+}
+
+
+/* === CAMPOS E BOTÕES === */
 #caixa {
          background: white;
          border-radius: 20px;
@@ -64,78 +82,21 @@ h3 {font-family: Arial;
 
   }
 
-h1 {
-   }
 
-.superior_esquerda {
-        
-         border: solid 5px;
-         border-color: white;
-         height: 300px;
-         width: 600px;
-         position: fixed;
-         top: 0px;
-         left: 0px;
-
-}
-
-.superior_direita {
-   background-color: blue;
-   border: solid 5px;
-   border-color: white;
-   height: 300px;
-   position: fixed;
-   top: 20px;
-   right: 10px;
-}
-
-.esquerda_inferior {
-
-}
-
-.superior_esquerda {
-   
-   background-color: green;
-   border: solid 5px;
-   border-color: white;
-   height: 300px;
-   width: 600px;
-   position: fixed;
-   top: 0px;
-   left: 0px;
-
-}
-
-.centro {
-   border: solid 5px;
-   border-color: white;
-   position: fixed;
-   height: 600px;
-   width: 600px;
-   top: 0px;
-   bottom: 0px;
-   left: 0px;
-   right: 0px;
-   margin:auto;
-   box-shadow: 0 0 50px white;
-}
-
-#caixa:focus {
+#caixa: focus {
    font-size: large;
-   font-family: Arial;
    background: white;
    border: 3px solid;
    color: blue;
    box-shadow: 0 0 30px;
-
 }
+
 
 #botao {
    height: 45px;
    width: 150px;
    background: black;
    color: yellow;
-   font-style: arial;
    font-size: medium;
    border: 2px solid;
    box-shadow: 0 0 6px;
@@ -143,11 +104,10 @@ h1 {
 
 }
 
+
 #botao:hover {
-              font-size:xx-large;
-              font-family: Arial;
-              background: black;
-              color: red;
-              box-shadow: 0 0 30px red;
+   font-size: xx-large;
+   color: red;
+   box-shadow: 0 0 30px red;
 
 }
