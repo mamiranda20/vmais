@@ -8,34 +8,48 @@
 </head>
 
 <body>
-    <form name="frm_login">
+    <div id="main">
+    <form name="frm_login" id="form" onsubmit="return confirmarEnvio()">
         <h1><b>CADASTRO</h1>
-        <p>
         <fieldset>
             <legend>Informações Pessoais</legend>
+
             <label>Nome completo:</label><br>
-            <input type="text" value="" size="30" maxlength="60" required="no"><br>
+            <input type="text" name="nome" value="" size="30" maxlength="60" required><br>
+
             <label>Endereço:</label><br>
-            <input type="text" value="" size="30" maxlength="20" required="no"><br>
+            <input type="text" name="endereco" value="" size="30" maxlength="20"><br>
+
             <label>E-mail:</label><br>
-            <input type="text" value="" size="30" maxlength="60" required="no"><br>
+            <input type="text" name="email" value="" size="30" maxlength="60" required><br>
+
             <label>Telefone:</label><br>
-            <input type="text" value="" size="30" maxlength="20" required="no"><br>
+            <input type="text" name="telefone" value="" size="30" maxlength="20"><br>
+
             <label>Data de nascimento:</label><br>
-            <input type="date" value="" size="30" maxlength="60" required="no"><br>
+            <input type="date" name="nascimento"><br>
+
             <label>CPF:</label><br>
-            <input type="text" value="" size="30" maxlength="20" required="no"><br>
+            <input type="text" name="cpf" maxlength="14"><br>
+
             <label>Senha:</label><br>
-            <input type="password" value="" size="30" maxlength="60" required="no"><br>
+            <input type="password"  name="senha" maxlength="20" required><br>
+
             <label>Confirme a senha:</label><br>
-            <input type="password" value="" size="30" maxlength="60" required="no"><br>
+            <input type="password" name="confirma_senha" maxlength="20" required><br>
             
-            
-            <a href="index.html">Enviar</a>&nbsp;&nbsp;
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</div>
            
-            <script language="JavaScript">
-            alert ("Cadastro realizado com sucesso")
+            <script>
+                function confirmarEnvio() {
+            alert ("Cadastro realizado com sucesso");
+            // aqui futuramente você pode validar se as senhas coincidem, etc.
+            return true; // se quiser bloquear envio, retorna false
+                }
             </script>
-            <p>
 </body>
 </html>
